@@ -1,4 +1,5 @@
 import Arrow from "@/components/Common/Arrow";
+import Button from "@/components/Common/Button";
 import Blogs from "@/components/Home/Blogs/Blogs";
 import Brands from "@/components/Home/Brands/Brands";
 import Contact from "@/components/Home/Contact/Contact";
@@ -42,12 +43,21 @@ export default function Home() {
                 </h1>
                 <Marquee>
                     {best_brands.map((logo, i) => (
-                        <Image key={i} src={logo} alt="" width={320} height={112} />
+                        <Image key={i} src={logo} alt="" className="mx-4" width={320} height={112} />
                     ))}
                 </Marquee>
             </div>
             <Contact />
             <Blogs />
+            <div className="bg-secondary section-gap text-background">
+                <div className="container grid grid-cols-2 items-center">
+                    <h2>Sign up for our exclusive email newsletter</h2>
+                    <div className="space-x-4">
+                        <input type="text" placeholder="Email Address" className="px-8 py-4 rounded-full" />
+                        <Button>Submit</Button>
+                    </div>
+                </div>
+            </div>
         </Main>
     );
 }

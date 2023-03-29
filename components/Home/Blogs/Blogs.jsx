@@ -1,4 +1,5 @@
 import Arrow from "@/components/Common/Arrow";
+import Button from "@/components/Common/Button";
 import React from "react";
 import BlogCard from "./BlogCard";
 import { blogs_data } from "./Data";
@@ -13,6 +14,9 @@ const Blogs = () => {
                 {blogs_data.map((blog, i) => (
                     <BlogCard key={i} blog={blog} />
                 ))}
+            </div>
+            <div className="flex justify-center">
+                <Button>View All Blogs</Button>
             </div>
         </div>
     );

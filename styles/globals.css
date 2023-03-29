@@ -21,15 +21,12 @@
     h3 {
         @apply text-lg font-bold;
     }
-    h4 {
-        @apply font-bold;
-    }
     hr {
         @apply border-edge;
     }
     input,
-    select {
-        @apply py-2 px-3 rounded-lg text-content focus:outline-none;
+    textarea {
+        @apply py-2.5 px-4 rounded-lg border text-content focus:outline-none;
     }
     /* Scrollbar Styling */
     ::-webkit-scrollbar {
