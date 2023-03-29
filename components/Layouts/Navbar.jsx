@@ -35,7 +35,7 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className="bg-background-sec top-0 z-20 border-b border-base-content/10">
+        <nav className="bg-background top-0 z-20 border-b border-base-content/10">
             <div className="container h-24 flex justify-between items-center">
                 <div className="flex xl:hidden items-center space-x-5">
                     <IoMenu size={28} onClick={() => setOpen(true)} />

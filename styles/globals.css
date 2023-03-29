@@ -31,10 +31,6 @@
     select {
         @apply py-2 px-3 rounded-lg text-content focus:outline-none;
     }
-    button,
-    .button {
-        @apply block w-max py-2 px-3 rounded-lg text-content text-center font-medium focus:outline-none;
-    }
     /* Scrollbar Styling */
     ::-webkit-scrollbar {
         @apply w-2 h-2;
@@ -65,4 +61,18 @@
     .gradient-text {
         @apply text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text;
     }
+}
+
+.border-gradient-bg-white {
+    background: linear-gradient(to right, #ffffff, #ffffff), linear-gradient(to bottom, #ffd33f, #f45d02);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+.border-gradient-bg-primary {
+    background: linear-gradient(to right, #ffd33f, #ffd33f), linear-gradient(to bottom, #ffd33f, #f45d02);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+.border-size {
+    border: 2px solid transparent;
 }
