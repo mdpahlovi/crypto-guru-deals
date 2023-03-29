@@ -19,6 +19,7 @@ module.exports = {
                 accent: "rgb(var(--accent) / <alpha-value>)",
                 content: "rgb(var(--content) / <alpha-value>)",
                 background: "rgb(var(--background) / <alpha-value>)",
+                "background-sec": "rgb(var(--background-sec) / <alpha-value>)",
                 edge: "rgb(var(--edge) / <alpha-value>)",
             },
             // backgroundImage: {

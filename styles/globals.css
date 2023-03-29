@@ -9,6 +9,7 @@
         --accent: 16 37 66;
         --content: 0 0 0;
         --background: 255 255 255;
+        --background-sec: 244 248 251;
         --edge: 212 216 217;
     }
     h1 {
@@ -52,10 +53,16 @@
     .container {
         @apply px-6 mx-auto;
     }
+    .section-gap {
+        @apply py-12 sm:py-14 lg:py-16;
+    }
     .box {
         @apply shadow rounded-lg px-5 py-4;
     }
     .bg-overly {
         @apply absolute w-full h-full inset-0 -z-[1];
+    }
+    .gradient-text {
+        @apply text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text;
     }
 }
