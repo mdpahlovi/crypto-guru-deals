@@ -8,7 +8,7 @@ const Products = () => {
         <div className="bg-background-sec section-gap">
             <div className="container space-y-12">
                 <SectionHeader title="MORE PROFITABLE MINERS" />
-                <div className="grid grid-cols-4 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     {product_data.map((product, i) => (
                         <ProductCard key={i} product={product} />
                     ))}

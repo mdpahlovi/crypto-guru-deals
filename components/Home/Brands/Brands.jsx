@@ -10,13 +10,13 @@ const Brands = () => {
         <div className="container section-gap space-y-12">
             <SectionHeader title="SHOP BY BRAND" />
             <Tab.Group>
-                <Tab.List className="grid grid-cols-6 gap-4">
+                <Tab.List className="flex gap-4 overflow-x-auto">
                     {brands_data.map((brand, i) => (
                         <BrandCard key={i} brand={brand} />
                     ))}
                 </Tab.List>
                 <Tab.Panels>
-                    <Tab.Panel className="grid grid-cols-4 gap-4">
+                    <Tab.Panel className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                         {product_data.map((product, i) => (
                             <ProductCard key={i} product={product} />
                         ))}

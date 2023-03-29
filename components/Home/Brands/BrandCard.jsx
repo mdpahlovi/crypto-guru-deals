@@ -11,7 +11,7 @@ const BrandCard = ({ brand }) => {
         <Tab
             className={({ selected }) =>
                 classNames(
-                    "h-full flex flex-col justify-between border-size rounded-2xl p-6 space-y-4 focus:outline-none",
+                    "min-w-[12rem] flex flex-col justify-between border-size rounded-2xl p-6 space-y-4 focus:outline-none",
                     selected ? "border-gradient-bg-primary" : "border-gradient-bg-white"
                 )
             }
