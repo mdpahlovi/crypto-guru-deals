@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import { useState } from "react";
 import { HiOutlineShoppingCart } from "react-icons/hi2";
 
 const ProductCard = ({ product }) => {

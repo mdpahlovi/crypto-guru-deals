@@ -1,5 +1,3 @@
-import React from "react";
-
 const ContactCard = ({ contact }) => {
     const { icon, title, details } = contact;
     return (
