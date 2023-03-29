@@ -5,13 +5,13 @@ import { SlSocialFacebook, SlSocialInstagram, SlSocialTwitter, SlSocialYoutube }
 const Footer = () => {
     return (
         <footer className="bg-accent text-background">
-            <div className="container py-12 grid grid-cols-2">
+            <div className="container py-12 grid lg:grid-cols-2">
                 <div>
                     <h1>
                         <span className="text-secondary">CRYPTO</span> GURU DEALS
                     </h1>
                     <p className="mt-3.5 font-bold">© 2023 Crypto Guru Deals. All rights reserved</p>
-                    <div className="mt-9 flex items-center gap-9">
+                    <div className="mt-5 xs:mt-9 flex flex-wrap items-center gap-y-4 gap-x-9">
                         <SlSocialFacebook size={26} />
                         <SlSocialTwitter size={26} />
                         <CiLinkedin size={26} />
